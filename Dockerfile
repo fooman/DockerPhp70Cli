@@ -4,5 +4,5 @@ RUN echo "deb http://packages.dotdeb.org jessie all" > /etc/apt/sources.list.d/d
     && apt-key add dotdeb.gpg \
     && apt-get update \
     && apt-get update \
-    && apt-get --no-install-recommends -y install php7.0-cli php7.0-xml\
+    && apt-get --no-install-recommends -y install php7.0-cli\
     && apt-clean --aggressive
