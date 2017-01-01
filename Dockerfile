@@ -5,3 +5,4 @@ RUN echo "deb http://packages.dotdeb.org jessie all" > /etc/apt/sources.list.d/d
     && apt-get update \
     && apt-get --no-install-recommends -y install php7.0-cli\
     && apt-clean --aggressive
+CMD ["php","-v"]
